@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color:rgba(143, 89, 13, 0.3);
+  }
+
+.label {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+input[type='text'], textarea {
+    width: 100%; 
+    padding: 12px 20px; 
+    margin: 8px 0; 
+    box-sizing: border-box; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 1.2em; 
+    background-color: white;
+}
+
+button[type='submit'] {
+    width: 100%; /* make the submit button fill the available space */
+    background-color: #4CAF50; /* set the background color to green */
+    color: white; /* set the text color to white */
+    padding: 14px 20px; /* add some padding to the button */
+    margin: 8px 0; /* add some space between the button and the inputs */
+    border: none; /* remove the border */
+    border-radius: 4px; /* add some rounded corners */
+    cursor: pointer; /* change the cursor to a pointer when hovering over the button */
+    font-size: 1.2em; /* increase the font size */
+}
+
+button[type='submit']:hover {
+    background-color: #45a049; /* change the background color on hover to a darker green */
+}
