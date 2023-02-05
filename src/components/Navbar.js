@@ -18,12 +18,9 @@ const NavBar = () => {
             <Nav.Link href="/createprojectpage">Add Project</Nav.Link>
             <NavDropdown title="Projects" id="basic-nav-dropdown">
               <NavDropdown.Item href="/tablespage">Tables</NavDropdown.Item>
-              <NavDropdown.Item href="/cabinetpage">Cabinets</NavDropdown.Item>
+              <NavDropdown.Item href="/furniturepage">Furniture</NavDropdown.Item>
               <NavDropdown.Item href="/interiorpage">Interior</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

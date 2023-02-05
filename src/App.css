@@ -37,18 +37,27 @@
   }
 }
 
+html, .container {
+    background-color: #212529;
+}
 
 .form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
+    height: 50%;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid gray;
     border-radius: 5px;
     background-color:rgba(143, 89, 13, 0.3);
   }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .label {
     font-weight: bold;

@@ -12,7 +12,8 @@ const Review = () => {
 
     const getReview = async () => {
         try {
-            const res = await fetch('/review')
+            // This is the current server thats being delpoyed
+            const res = await fetch('http://localhost:4000/reviews/')
             const allReviews = await res.json()
             setReview(allReviews)
         } catch (error) {
@@ -22,7 +23,7 @@ const Review = () => {
 
     const createReview = async (input) => {
         try {
-            const newReview = await fetch('/review', {
+            const newReview = await fetch('http://localhost:4000/reviews/', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
