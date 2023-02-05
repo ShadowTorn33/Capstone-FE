@@ -8,7 +8,7 @@ const FurniturePage = () => {
     const [projects, SetProjects] = useState([])
 
     const fetchProjects = async () => {
-        const res = await fetch('http://localhost:4000/projects/')
+        const res = await fetch('https://thecraftsmanway.herokuapp.com/projects/')
         const data = await res.json()
         SetProjects(data)
     }

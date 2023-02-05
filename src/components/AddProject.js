@@ -14,7 +14,7 @@ const AddProject = () => {
 
     const getProjects = async () => {
         try {
-            const res = await fetch('http://localhost:4000/projects')
+            const res = await fetch('https://thecraftsmanway.herokuapp.com/projects')
             const allProjects = await res.json()
             setProject(allProjects)
         } catch (error) {
@@ -24,7 +24,7 @@ const AddProject = () => {
 
     const createProject = async (input) => {
         try {
-            const newProject = await fetch('http://localhost:4000/projects', {
+            const newProject = await fetch('https://thecraftsmanway.herokuapp.com/projects', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

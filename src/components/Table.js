@@ -11,7 +11,7 @@ const Table = () => {
   const { id } = useParams();
 
   const fetchProject = async () => {
-        const res = await fetch(`http://localhost:4000/projects/${id}`)
+        const res = await fetch(`https://thecraftsmanway.herokuapp.com/projects/${id}`)
         const data = await res.json()
         SetProject(data)
         console.log(data)
@@ -26,7 +26,7 @@ const Table = () => {
       const options = {
         method: "DELETE",
       };
-      const response = await fetch(`http://localhost:4000/projects/${id}`, options);
+      const response = await fetch(`https://thecraftsmanway.herokuapp.com/projects/${id}`, options);
       const deletedPerson = await response.json();
 
       navigate("/");
@@ -45,7 +45,7 @@ const Table = () => {
             },
             body: JSON.stringify(editProject)
         }
-        await fetch(`http://localhost:4000/projects/${id}`, options)
+        await fetch(`https://thecraftsmanway.herokuapp.com/projects/${id}`, options)
 
         fetchProject()
     } catch (error) {

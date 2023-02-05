@@ -13,7 +13,7 @@ const Review = () => {
     const getReview = async () => {
         try {
             // This is the current server thats being delpoyed
-            const res = await fetch('http://localhost:4000/reviews/')
+            const res = await fetch('https://thecraftsmanway.herokuapp.com/reviews/')
             const allReviews = await res.json()
             setReview(allReviews)
         } catch (error) {
@@ -23,7 +23,7 @@ const Review = () => {
 
     const createReview = async (input) => {
         try {
-            const newReview = await fetch('http://localhost:4000/reviews/', {
+            const newReview = await fetch('https://thecraftsmanway.herokuapp.com/reviews/', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
