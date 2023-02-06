@@ -28,7 +28,7 @@ const TablesPage = () => {
                 if(project.tag === 'Table')
                 return (
                     <div  key={idx}>
-                        <Card className='card' style={{ width: "18rem" }}>
+                        <Card className='small-card' style={{ width: "18rem" }}>
                             <Link to={`/${project._id}`}>
                                 <Card.Img
                                     variant="top"
