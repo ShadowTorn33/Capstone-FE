@@ -21,12 +21,12 @@ const TablesPage = () => {
 
     
     return (
-        <div>
-        <Container style={{ 
-                        width: "18rem",
-                        display: "flex",
-                        flexWrap: "wrap",
-                         }} fluid>
+        <div style={{ 
+            width: "18rem",
+            display: "flex",
+            flexWrap: "wrap",
+             }}>
+        <Container fluid>
             <div className='card-container'>
             {projects.map((project, idx) => {
                 if(project.tag === 'Table')
