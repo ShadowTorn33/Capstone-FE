@@ -23,11 +23,12 @@ const TablesPage = () => {
     return (
         <div>
         <Container fluid>
+            <div className='card-container'>
             {projects.map((project, idx) => {
                 if(project.tag === 'Table')
                 return (
                     <div  key={idx}>
-                        <Card style={{ width: "18rem" }}>
+                        <Card className='card' style={{ width: "18rem" }}>
                             <Link to={`/${project._id}`}>
                                 <Card.Img
                                     variant="top"
@@ -49,6 +50,7 @@ const TablesPage = () => {
                     </div>
                 )
             })}
+            </div>
             </Container>
         </div>
           )
