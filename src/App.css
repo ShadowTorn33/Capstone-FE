@@ -56,17 +56,3 @@ button[type='submit']:hover {
     background-color: #45a049; 
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .card {
-    margin: 10px;
-    width: 18rem;
-  }
-
-  #background {
-    background-image: url(https://i.imgur.com/aCcTyjq.jpg);
-  }
