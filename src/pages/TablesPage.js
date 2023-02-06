@@ -21,17 +21,13 @@ const TablesPage = () => {
 
     
     return (
-        <div style={{ 
-            width: "18rem",
-            display: "flex",
-            flexWrap: "wrap",
-             }}>
+        <div>
         <Container fluid>
-            <div className='card-container'>
+            <div className='container'>
             {projects.map((project, idx) => {
                 if(project.tag === 'Table')
                 return (
-                    <div key={idx}>
+                    <div style={{ width: "18rem"}} key={idx}>
                         <Card>
                             <Link to={`/${project._id}`}>
                                 <Card.Img
@@ -42,7 +38,7 @@ const TablesPage = () => {
                                         display: "flex",
                                         flexWrap: "wrap",
                                         width: "100%",
-                                        height: "auto",
+                                        height: "17rem",
                                         objectfit: "fill",
                                     }}
                                 />

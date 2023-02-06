@@ -2,9 +2,6 @@
   text-align: center;
 }
 
-html, .container {
-    background-color: #212529;
-}
 
 .form {
     display: flex;

@@ -21,6 +21,7 @@ const FurniturePage = () => {
     return (
         <div>
         <Container fluid>
+            <div className='container'>
             {projects.map((project, idx) => {
                 if(project.tag === 'Furniture')
                 return (
@@ -47,6 +48,7 @@ const FurniturePage = () => {
                     </div>
                 )
             })}
+            </div>
             </Container>
         </div>
           )
