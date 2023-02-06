@@ -19,7 +19,7 @@ const NavBar = () => {
             <NavDropdown title="Projects" id="basic-nav-dropdown">
               <NavDropdown.Item href="/tablespage">Tables</NavDropdown.Item>
               <NavDropdown.Item href="/furniturepage">Furniture</NavDropdown.Item>
-              <NavDropdown.Item href="/interiorpage">Interior</NavDropdown.Item>
+              <NavDropdown.Item href="/reviewspage">Reviews</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
           </Nav>

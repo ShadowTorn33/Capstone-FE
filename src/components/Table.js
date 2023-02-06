@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/esm/Button";
 import { useParams, useNavigate } from "react-router-dom";
+import Review from './Review'
 
 const Table = () => {
   const [project, SetProject] = useState([]);
@@ -69,8 +70,8 @@ const handleChange = (e) => {
           src={project.image}
           alt={project.alt}
           style={{
-            display: "flex",
-            flexWrap: "wrap",
+            // display: "flex",
+            // flexWrap: "wrap",
             width: "100%",
             height: "auto",
             objectfit: "fill",
@@ -83,6 +84,11 @@ const handleChange = (e) => {
           </Button>
         </Card.Body>
       </Card>
+          <div style={{ width: "100%",
+                        height: "100%",
+                        display: "flex",
+                         }}>
+            <Review />
 
           
           <form className='form' onSubmit={updateProject}>
@@ -121,6 +127,7 @@ const handleChange = (e) => {
                 />
                 <button className='button' type="submit">Update Project</button>
             </form>
+                </div>
     </div>
   ) : (
     loading()

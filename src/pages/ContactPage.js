@@ -45,7 +45,8 @@ const ContactPage = () => {
     <>
         
         <form className='form' onSubmit={onSubmit}>
-        <label className='label' htmlFor="first_name">Contact Form</label>
+        <label className='label' htmlFor="first_name" style={{color: "white"}}>Contact Form</label>
+        <br/>
         <input 
          type='text'
          id='first_name'

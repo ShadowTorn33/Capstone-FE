@@ -8,9 +8,6 @@ const CreateProjectPage = () => {
       <div>
         <AddProject />
       </div>
-      <div>
-        <Review />
-      </div>
     </>
   );
 };

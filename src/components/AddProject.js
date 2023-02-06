@@ -63,7 +63,8 @@ const AddProject = () => {
         <section>
             
             <form className='form' onSubmit={handleSubmit}>
-            <label className='label' htmlFor="tag">Add a Project!</label>
+            <label className='label' htmlFor="tag" style={{color: "white"}}>Add a Project!</label>
+                <br/>
                 <input
                 className='input'
                 type="text"

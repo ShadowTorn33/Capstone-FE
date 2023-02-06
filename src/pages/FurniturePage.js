@@ -25,7 +25,7 @@ const FurniturePage = () => {
             {projects.map((project, idx) => {
                 if(project.tag === 'Furniture')
                 return (
-                    <div  key={idx}>
+                    <div style={{ padding: "10px" }} key={idx}>
                         <Card style={{ width: "18rem" }}>
                             <Link to={`/${project._id}`}>
                                 <Card.Img

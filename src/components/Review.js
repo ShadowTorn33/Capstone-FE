@@ -12,7 +12,6 @@ const Review = () => {
 
     const getReview = async () => {
         try {
-            // This is the current server thats being delpoyed
             const res = await fetch('https://thecraftsmanway.herokuapp.com/reviews/')
             const allReviews = await res.json()
             setReview(allReviews)
@@ -56,7 +55,7 @@ const Review = () => {
 
 
   return (
-     <div>
+     <div style={{ width: "100%", objectFit: "fill" }}>
             <form className='form' onSubmit={handleSubmit}>
             <label className='label' htmlFor="client">Leave a Review!</label>
                 <input
