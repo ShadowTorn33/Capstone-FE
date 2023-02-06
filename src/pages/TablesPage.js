@@ -27,8 +27,12 @@ const TablesPage = () => {
             {projects.map((project, idx) => {
                 if(project.tag === 'Table')
                 return (
-                    <div className='card' key={idx}>
-                        <Card style={{ width: "18rem" }}>
+                    <div key={idx}>
+                        <Card style={{ 
+                                width: "18rem",
+                                display: "flex",
+                                flexWrap: "wrap",
+                                justifyContent: "center" }}>
                             <Link to={`/${project._id}`}>
                                 <Card.Img
                                     variant="top"
