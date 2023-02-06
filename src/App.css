@@ -67,6 +67,6 @@ button[type='submit']:hover {
     width: 18rem;
   }
 
-  body {
+  #background {
     background-image: url(https://i.imgur.com/aCcTyjq.jpg);
   }
