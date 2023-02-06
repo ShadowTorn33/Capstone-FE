@@ -16,3 +16,54 @@ ul {
 h2 {
     color: white
 }
+
+.review-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: fit-contents;
+        color: white;
+        background: #2F394C;
+        border-radius: 15px;
+        padding: 20px 30px;
+}
+
+.top{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .picture{
+    display:flex;
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+    justify-contents:center;
+    margin-left: 20px;
+    font-size: 16px;
+    
+  }
+  .bottom{
+      height: fit-contents;
+    text-align: justify;
+      
+  }
+  
+  .picture{
+    width: 60px;
+    height: 60px;
+    background: blue;
+    border-radius: 80px
+  }
+
+  .name{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 3px 0;
+  }
+ 

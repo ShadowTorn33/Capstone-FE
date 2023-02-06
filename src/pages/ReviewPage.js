@@ -5,23 +5,25 @@ import { useState, useEffect } from 'react'
 // import Button from 'react-bootstrap/Button';
 // import { Link } from 'react-router-dom'
 
-const TablesPage = () => {
+const ReviewPage = () => {
     const [reviews, SetReviews] = useState([])
     const [newForm, setNewForm] = useState({
         client: "",
         comment: "",
     })
 
+    const BASE_URL = `https://thecraftsmanway.herokuapp.com/reviews/`
     const fetchReviews = async () => {
         try {
-            const res = await fetch('https://thecraftsmanway.herokuapp.com/reviews')
+            const res = await fetch(BASE_URL)
             const allReviews = await res.json()
             SetReviews(allReviews)
         } catch (error) {
             console.error(error)
         }
     }
-
+    
+    console.log(reviews)
     useEffect(() => {
         fetchReviews()
     },[])
@@ -29,22 +31,25 @@ const TablesPage = () => {
     
     return (
         <div>
-            {reviews.map((review) => {
-                <div className='review-container'>
+            
+            { reviews ? 
+            reviews.map((review, idx) => {
+                return (
+                <div key={idx} className='review-container'>
                 <div className='top'>
                   <div className='picture'></div>
                   <div className='text'>
-                    <p className='name'>{review.client}</p>
-                    <p className='role'>Person Role</p>
+                    <p className='name p'>{review.client}</p>
                   </div>
                 </div>
                  <div className='bottom'>
-                   <p>{review.comment}</p>
+                   <p className='p'>{review.comment}</p>
                  </div>
               </div>
-            })}
+            )}): <p>Loading. . .</p>}
+            
         </div>
           )
         }
 
-export default TablesPage
+export default ReviewPage

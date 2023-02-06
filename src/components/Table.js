@@ -11,6 +11,7 @@ const Table = () => {
   const navigate = useNavigate();
   const { id } = useParams();
 
+  console.log(id)
   const fetchProject = async () => {
         const res = await fetch(`https://thecraftsmanway.herokuapp.com/projects/${id}`)
         const data = await res.json()
@@ -88,7 +89,7 @@ const handleChange = (e) => {
                         height: "100%",
                         display: "flex",
                          }}>
-            <Review />
+            <Review id={id}/>
 
           
           <form className='form' onSubmit={updateProject}>

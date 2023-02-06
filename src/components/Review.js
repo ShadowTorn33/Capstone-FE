@@ -3,13 +3,14 @@ import { useState, useEffect } from 'react'
 // import { Link } from 'react-router-dom'
 
 
-const Review = () => {
+const Review = ({id}) => {
     const [review, setReview] = useState([])
     const [newForm, setNewForm] = useState({
         client: "",
-        comment: ""
+        comment: "",
+        project: id
     }) 
-
+    console.log("table id from prop", id)
     const getReview = async () => {
         try {
             const res = await fetch('https://thecraftsmanway.herokuapp.com/reviews/')
@@ -22,7 +23,7 @@ const Review = () => {
 
     const createReview = async (input) => {
         try {
-            const newReview = await fetch('https://thecraftsmanway.herokuapp.com/reviews/', {
+            const newReview = await fetch(`https://thecraftsmanway.herokuapp.com/reviews/`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
