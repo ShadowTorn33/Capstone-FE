@@ -26,7 +26,7 @@ const TablesPage = () => {
                         width: "18rem",
                         display: "flex",
                         flexWrap: "wrap",
-                        justifyContent: "center" }} fluid>
+                         }} fluid>
             <div className='card-container'>
             {projects.map((project, idx) => {
                 if(project.tag === 'Table')
